@@ -1,0 +1,2 @@
+resta colocar a nova aba do bim
+por hora posso fazer com que ao clicar apareça uma div na frente da tela não ocupando todo o espaço com o texto do BIM e ao clicar no X feche essa div, como se fosse um anuncio
