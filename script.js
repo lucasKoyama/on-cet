@@ -43,21 +43,21 @@ main.addEventListener('scroll', () => {
 });
 
 // BIM Info
+
 const bim = document.querySelector('.bim');
 const bimInfo = document.querySelector('.bim-info');
 const aboutCetSec = document.querySelector('.about-on-cet');
 const partnersSec = document.querySelector('.partners');
 const returnBtn = document.querySelector('.bim-info button');
-bim.addEventListener('click', () => {
-  bimInfo.style.opacity = '1';
-  aboutCetSec.style.filter = 'blur(4px)';
-  partnersSec.style.filter = 'blur(4px)';
-});
-returnBtn.addEventListener('click', () => {
-  bimInfo.style.opacity = '0';
-  aboutCetSec.style.filter = '';
-  partnersSec.style.filter = '';
-});
+const bimInfoState = (winOpacity, blur) => {
+  bimInfo.style.opacity = winOpacity;
+  aboutCetSec.style.filter = blur;
+  partnersSec.style.filter = blur;
+};
+bim.addEventListener('click', () => bimInfoState('1', 'blur(4px)'));
+bim.addEventListener('touchstart', () => bimInfoState('1', 'blur(4px)'));
+returnBtn.addEventListener('click', () => bimInfoState('0', ''));
+returnBtn.addEventListener('touchstart', () => bimInfoState('0', ''));
 
 
 // Carousel - https://www.youtube.com/watch?v=QAD0K112tlQ&t=60s - BUG no último item a tela se desloca, provavelmente por conta do main ser o scroll principal
