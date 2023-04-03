@@ -24,15 +24,16 @@ main.addEventListener('scroll', () => {
   const numsDelta = bigNum[0].getBoundingClientRect().top;
   if (runBigNums && numsDelta < mainY * 0.93) {
     runBigNums = false;
-    const interval = 1000;
+    const interval = 3000;
     bigNum.forEach((num) => {
       let startNum = 0;
       const endNum = parseInt(num.getAttribute('data-val'));
       const duration = Math.floor(interval / endNum);
+      console.log(duration);
       const counter = setInterval(() => {
-        startNum += 1
+        startNum += 10;
         num.textContent = startNum;
-        if (startNum == endNum) clearInterval(counter);
+        if (startNum >= endNum) clearInterval(counter);
       }, duration);
     });
   }
