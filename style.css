@@ -7,7 +7,7 @@
 html {
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(41, 41, 41);
 }
 
 a {
@@ -26,7 +26,6 @@ main {
   overflow-x: hidden;
   perspective: 10px;
   transition: all 1.5s;
-  
 }
 
 .main-menu-on {
@@ -72,9 +71,6 @@ main {
   width: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-.background {
   transform: translateZ(-10px) scale(2);
 }
 
@@ -178,10 +174,34 @@ nav.shrink {
   justify-content: space-around;
 }
 
-.about-me h3 {
+.about-me h2 {
   margin-left: 2.5vw;
-  width: 50%;
   color: rgb(248, 248, 255);
+}
+
+.about-me-more {
+  width: 55%;
+}
+
+.about-me-more button {
+  width: 180px;
+  height: 45px;
+  padding: 2px;
+  font-size: 1.2em;
+  font-weight: 800;
+  box-shadow: 1px 1px 15px rgb(100, 100, 100);
+  color: rgb(31, 31, 31);
+  margin: 0.5vw 2.5vw;
+}
+
+.about-me-more button:hover {
+  box-shadow: 1px 1px 50px rgb(100, 100, 100);
+}
+
+.vitae {
+  background-color: rgb(28, 37, 64);
+  color: #fff;
+  text-align: justify;
 }
 
 .founder {
@@ -204,7 +224,7 @@ nav.shrink {
   justify-content: center;
 }
 
-h3 {
+h2 {
   padding-top: 2%;
   margin-bottom: 0.5%;
   display: flex;
@@ -220,11 +240,19 @@ h3 {
   justify-content: center;
 }
 
+.vitae p {
+  margin: 2vw;
+  font-size: 1.25vw;
+}
+
 .info {
   filter: blur(0);
   width: 50vw;
+  min-width: 24.4vw;
+  min-height: 40.1vw;
   background-color: rgb(243,154,52);
   font-size: 1.2vw;
+  transition: all 1.5s;
 }
 
 .info span {
@@ -245,7 +273,7 @@ h3 {
   margin-left: 2.5vw;
 }
 
-.info h2 {
+.info h4 {
   margin-top: 1vw;
 }
 
@@ -261,7 +289,7 @@ h3 {
   background-color: rgba(31,31,31,1);
   color: rgb(248, 248, 255);
   scroll-margin-top: 10vw;
-  transition: all 1.5s;
+  transition: all 1s;
 }
 
 .projeto {
@@ -303,7 +331,7 @@ h3 {
   overflow-y: auto;
 }
 
-.bim-info h3 {
+.bim-info h2 {
   text-align: center;
   font-size: 1.5em;
   font-weight: 600;
@@ -311,16 +339,17 @@ h3 {
   margin-top: -2.5vw;
 }
 
-.bim-info button {
-  margin-top: 20px;
+.return-btn {
+  margin-top: 30px;
   border: none;
   padding: 0.5%;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1em;
   border-radius: 8px;
   box-shadow: 1px 1px 10px rgb(100, 100, 100);
   cursor: pointer;
-  width: 100px;
-  height: 30px;
+  width: 120px;
+  height: 40px;
 }
 
 .close-line-2 { transform: rotate(-45deg) translate(-8px, 8px); }
@@ -367,10 +396,14 @@ h3 {
   background: rgb(31,31,31);
   background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(18,18,18,1) 100%);
   position: relative;
-  height: 100%;
-  max-height: 27vw;
-  padding-bottom: 1.5vw;
-  transition: all 1.5s;
+  transition: all 1s;
+}
+
+.partners-guide {
+  font-size: 1.7vw;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(237, 182, 119);
 }
 
 .partner ul {
@@ -383,7 +416,7 @@ h3 {
   transition: all 1s;
 }
 
-.partners h3 {
+.partners h2 {
   padding-top: 0;
   color: rgb(248, 248, 255);
 }
@@ -394,16 +427,26 @@ h3 {
   bottom: 4vw;
   text-align: center;
   color: rgb(248, 248, 255);
+  display: flex;
+  flex-direction: row;
+  transition: all 1s;
 }
 
-.partner img {
+.partner-img {
   margin: 0.5vw 0;
-  width: 12vw;
+  width: 12em;
   border-radius: 30%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.partner-img:hover {
+  border: 1.5px solid rgb(38, 38, 38);
+  box-shadow: 1px 1px 10px rgb(100, 100, 100);
 }
 
 .partner-div {
-  margin-top: -5vw;
+  margin-top: 3.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,13 +456,15 @@ h3 {
   font-size: 1.2vw;
 }
 
-partner-div p {
+.partner-div p {
   font-size: 1vw;
 }
 
 .engineers,
 .digital {
   display: flex;
+  justify-content: center;
+  margin-bottom: -4vw;
 }
 
 .engineers div:nth-child(1) { transition-delay: 200ms; }
@@ -427,21 +472,33 @@ partner-div p {
 .digital div:nth-child(1) { transition-delay: 600ms; }
 .digital div:nth-child(2) { transition-delay: 800ms; }
 
-
-.partners #can {
-  width: 11vw;
-  transform: rotate(270deg);
-  position: relative;
-  left: -2.5vw;
-  bottom: -10.1vw;
+.partner-info {
+  display: none;
+  z-index: -1;
+  opacity: 0;
+  transform: translateX(-80%);
+  transition-duration: 1s;
 }
 
-.partners #wire {
-  width: 6.2vw;
-  transform: rotate(340deg);
-  position: relative;
-  right: -81vw;
-  bottom: -11.6vw;
+.partner-info-show {
+  transform: translateX(0%);
+}
+
+.partner-info { margin-left: 1.5vw; }
+.partner-info h4 { margin-bottom: 0.35em; }
+.skills ul { list-style: none; }
+.skills h5 { font-size: 1.2em; }
+.skills ul li:last-child { margin-bottom: 0.5em; }
+.person-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-contact a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .portfolio {
@@ -450,14 +507,16 @@ partner-div p {
   background: rgb(31,31,31);
   background: linear-gradient(0deg, rgba(31,31,31,1) 0%, rgba(18,18,18,1) 100%);
   padding-bottom: 1.5%;
+  position: relative;
+  z-index: 1;
 }
 
-.portfolio h3 {
+.portfolio h2 {
   color: rgb(248, 248, 255);
   margin-bottom: 1.6vw;
 }
 
-.portfolio h4 {
+.portfolio h3 {
   color: rgb(248, 248, 255);
   font-weight: 600;
   font-size: 3vw;
@@ -601,7 +660,7 @@ footer i:hover {
   color:rgb(28, 37, 64);
 }
 
-footer h2 {
+footer h3 {
   display: flex;
   justify-content: center;
   margin-bottom: 0.8vw;
@@ -637,7 +696,7 @@ footer p {
   .nav-list {
     position: absolute;
     width: 100%;
-    height: 46vh;
+    height: 55vh;
     background: linear-gradient(0deg, rgba(31, 31, 31, 0.99) 0%, rgba(18, 18, 18, 0.98) 100%);
     flex-direction: column;
     align-items: start;
@@ -648,7 +707,7 @@ footer p {
   }
 
   .nav-list li:nth-child(1) {
-    margin-top: 28vh;
+    margin-top: 35vh;
   }
 
   .nav-list li {
@@ -710,18 +769,13 @@ footer p {
     text-align: center;
   }
 
-  h3 {
+  h2 {
     font-size: 11vw;
   }
 
-  .partners {
-    height: 108vw;
-    max-height: none;
-  }
+  .partners { padding-bottom: 5vw; }
 
-  .partners h3 {
-    margin-bottom: 8vw;
-  }
+  .partners-guide { font-size: 4vw; }
 
   .partner-div {
     display: flex;
@@ -735,29 +789,46 @@ footer p {
   .digital {
     justify-content: space-around;
     width: 100%;
+    margin-top: 3vw;
   }
 
   .engineers {
     order: 1;
   }
 
+  .partner { flex-direction: column; }
+
+  .partner-info { transform: translateY(-80%); }
+  .partner-info-show { transform: translateY(0%); }
+  .partner-info h5 { font-size: 1.5em; }
+  .skills ul li { font-size: 1.2em; }
+  .skills ul li:last-child { margin-bottom: 1em; }
+  .text { font-size: 1.2em; }
+  .partners h4 { margin-bottom: 0.2em; }
+
   .partner img {
     width: 28vw;
   }
+
+  .partner .more-info-img { width: 14em; }
+  .partner .more-info-h4 { font-size: 1.6em; }
+  .partner .more-info-p { font-size: 1.3em; }
 
   .partner h4 {
     font-size: 3.6vw;
     font-weight: 600;
   }
 
-  .partner p {
-    font-size: 3.5vw;
-  }
+  .person-contact .return-btn { margin-top: 2vw; }
+
+  .partner p { font-size: 3.5vw; }
 
   .partners #can, 
   .partners #wire {
     display: none;
   }
+
+  .partners h4 { margin-bottom: 0.4em; }
 
   .projeto {
     display: flex;
@@ -786,15 +857,30 @@ footer p {
   .about-me {
     display: block;
     background-size: 228vw;
-    background-position: -81vw -33vw;
+    background-position: -81vw -32vw;
   }
 
-  .about-me h3 {
-    margin-left: 0%;
-    text-align: center;
+  .about-me h2 {
+    margin-left: 4.5%;
+    text-align: start;
     font-size: 7.6vw;
     width: 100%;
-    margin-bottom: 26vw
+  }
+
+  .about-me-more {
+    width: 100%;
+    margin-bottom: 25vw;
+  }
+
+  .about-me-more button {
+    width: 22vw;
+    height: 5.5vw;
+    padding: 0.5vw;
+    font-size: 2vw;
+    position: absolute;
+    right: 0;
+    margin-right: 6.5vw;
+    margin-top: -7.7vw;
   }
 
   .about-info p {
@@ -808,7 +894,7 @@ footer p {
     padding: 8%;
   }
 
-  .bim-info h3 {
+  .bim-info h2 {
     margin-bottom: 3vw;
   }
   
@@ -818,6 +904,11 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .vitae p {
+    margin: 5vw;
+    font-size: 1em;
   }
 
   .info ul {
@@ -834,12 +925,12 @@ footer p {
     font-size: 12vw;
   }
 
-  .portfolio h4 {
+  .portfolio h3 {
     margin-top: 2vw;
     font-size: 7vw;
   }
 
-  footer h2 {
+  footer h3 {
     font-size: 6vw;
   }
 
@@ -855,9 +946,4 @@ footer p {
   .contact i {
     font-size: 10vw;
   }
-
-  .text {
-    font-size: 4vw;
-  }
-
 }
