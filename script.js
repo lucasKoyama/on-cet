@@ -102,30 +102,30 @@ partners.forEach((partner) => partner.addEventListener('click', (event) => {
 const aboutMeBtn = document.querySelector('.about-me-more button');
 const generalInfo = document.querySelector('.info');
 const previousInfo = generalInfo.cloneNode(true);
-let notClicked = true;
 aboutMeBtn.addEventListener('click', () => {
-  if (notClicked) {
-    generalInfo.childNodes.forEach((ul, index) => {
-      if (index % 2 !== 0) ul.style.filter = 'blur(500px)';
-    });
-    generalInfo.style.background = 'rgb(28, 37, 64)';
-    setTimeout(() => {
-      generalInfo.innerHTML = '<p>César Tavares fundador da “Cet Engenharia”, criou um escritório de projetos estrutrais, sempre com o objetivo de criar a boa engenharia na construções civil. Buscando parcerias solidas e comprometidas. Atendendo São João da Boa Vista e Região. Hoje a Cet Engenharia evoluiu para “on cet”, com o objetivo de estender as fronteiras que o atendimento presencial limitava, para o atendimento on-line, rompendo as essas barreiras físicas e atender para todo território nacional, estamos 100 % com atendimento ON LINE.</p>';
-      generalInfo.classList.add('vitae');
-    }, 1500);
-    notClicked = false;
-  } else {
-    generalInfo.classList.remove('vitae');
-    generalInfo.style.background = 'rgb(243,154,52)';
-    generalInfo.innerHTML = previousInfo.innerHTML;
-    setTimeout(() => {
-      generalInfo.childNodes.forEach((ul, index) => {
-        if (index % 2 !== 0) ul.classList.add('show');
-      });
-    }, 200)
-    notClicked = true;
-  }
+  generalInfo.childNodes.forEach((ul, index) => {
+    if (index % 2 !== 0) ul.style.filter = 'blur(500px)';
+  });
+  generalInfo.style.background = 'rgb(28, 37, 64)';
+  setTimeout(() => {
+    generalInfo.innerHTML = '<p>César Tavares fundador da “Cet Engenharia”, criou um escritório de projetos estrutrais, sempre com o objetivo de criar a boa engenharia na construções civil. Buscando parcerias solidas e comprometidas. Atendendo São João da Boa Vista e Região. Hoje a Cet Engenharia evoluiu para “on cet”, com o objetivo de estender as fronteiras que o atendimento presencial limitava, para o atendimento on-line, rompendo as essas barreiras físicas e atender para todo território nacional, estamos 100 % com atendimento ON LINE.</p>' +
+      '<button onClick="return2Info()">Voltar</button>';
+    generalInfo.classList.add('vitae');
+  }, 1500);
+  aboutMeBtn.toggleAttribute('disabled', true);
 });
+
+const return2Info = () => {
+  generalInfo.classList.remove('vitae');
+  generalInfo.style.background = 'rgb(243,154,52)';
+  generalInfo.innerHTML = previousInfo.innerHTML;
+  setTimeout(() => {
+    generalInfo.childNodes.forEach((ul, index) => {
+      if (index % 2 !== 0) ul.classList.add('show');
+    });
+  }, 200)
+  aboutMeBtn.toggleAttribute('disabled', false);
+};
 
 // Carousel - https://www.youtube.com/watch?v=QAD0K112tlQ&t=60s - BUG no último item a tela se desloca, provavelmente por conta do main ser o scroll principal
 const controls = document.querySelectorAll(".control");

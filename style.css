@@ -17,6 +17,7 @@ a {
 
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -202,6 +203,18 @@ nav.shrink {
   background-color: rgb(28, 37, 64);
   color: #fff;
   text-align: justify;
+}
+
+.vitae button {
+  margin: auto;
+  display: block;
+  width: 180px;
+  height: 40px;
+  padding: 2px;
+  font-size: 1em;
+  font-weight: 800;
+  box-shadow: 1px 1px 5px rgb(100, 100, 100);
+  color: rgb(31, 31, 31);
 }
 
 .founder {
@@ -492,7 +505,6 @@ h2 {
 .person-contact {
   display: flex;
   flex-direction: column;
-  align-items: start;
 }
 
 .person-contact a {
