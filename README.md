@@ -5,7 +5,7 @@ Landing page para empresa de Engenharia Civil, criada utilizando apenas os funda
 
 *Observação: Durante a realização deste projeto, eu estava no final do módulo de fundamentos e, por esse motivo, ainda não havia aprendido React. Portanto, todo o desenvolvimento foi feito utilizando apenas os fundamentos, o que me permitiu praticar e desenvolver diversas funcionalidades do absoluto zero!*
 
-## :pushpin: Features e seu correspondente minuto no vídeo
+## :pushpin: Features
 <details>
   <summary>Página responsiva</summary>
   A página foi desenvolvida de forma responsiva, adaptando-se a diferentes tamanhos de tela e dispositivos. Isso garante uma experiência consistente e agradável para os usuários, independentemente do dispositivo que estão utilizando.
