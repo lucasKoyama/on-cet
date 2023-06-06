@@ -1,5 +1,6 @@
 # ONCET
-
+![Screenshot from 2023-06-06 12-38-41](https://github.com/lucasKoyama/onCET/assets/121680414/421d29c8-a136-4083-b179-0a2059d273ba)
+[ONCET](https://www.oncet.com.br/)
 ## :computer: Sobre
 Landing page para empresa de Engenharia Civil, criada utilizando apenas os fundamentos do desenvolvimento web, sem o uso de bibliotecas externas.
 
@@ -47,3 +48,4 @@ Landing page para empresa de Engenharia Civil, criada utilizando apenas os funda
 3.  Css
 4.  Git & Github
 5.  Unix & Bash
+
