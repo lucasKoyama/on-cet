@@ -11,11 +11,11 @@ Think of the STAR + Hero Journey description for the entire README:
 <details>
   <summary>Summary</summary>
 
-  1. [Overview]()
-  2. [Features & Challenges solved]()
-  3. [Tools used]()
-  4. [Results]()
-  5. [Authors]()
+  1. [Overview](https://github.com/lucasKoyama/onCET?tab=readme-ov-file#overview---oncet-web-fundamentals-version)
+  2. [Features & Challenges solved](https://github.com/lucasKoyama/onCET?tab=readme-ov-file#-features--challenges-solved)
+  3. [Tools used](https://github.com/lucasKoyama/onCET?tab=readme-ov-file#%EF%B8%8F-tools-used)
+  4. [Results](https://github.com/lucasKoyama/onCET?tab=readme-ov-file#-results--learnings)
+  5. [Authors](https://github.com/lucasKoyama/onCET?tab=readme-ov-file#authors)
 </details>
 <p>
 Landing page for a Civil Engineering company, built using only the fundamentals of web development without the use of external libraries.
