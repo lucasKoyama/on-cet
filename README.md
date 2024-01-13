@@ -32,37 +32,42 @@ The link below is on the website with the Next.js version; the code of this vers
 <!-- TASKS / CHALLENGES -->
 <details>
   <summary>Responsive page</summary>
-  The page was developed responsively, adapting to different screen sizes and devices. This ensures a consistent and pleasant experience for users, regardless of the device they are using.
+The page was developed responsively, adapting to different screen sizes and devices. This ensures a consistent and pleasant experience for users, regardless of the device they are using.
 </details>
 
 <details>
   <summary>Show & Hide header on page scroll</summary>
-  The page header is hidden when scrolling down and displayed again when scrolling up. This provides a more immersive experience and allows page content to be viewed without distractions.
+The page header is hidden when scrolling down and displayed again when scrolling up. This provides a more immersive experience and allows page content to be viewed without distractions.
 </details>
 
 <details>
   <summary>Parallax</summary>
-  Utilizei o efeito de parallax no início da landing page. Isso cria uma sensação de profundidade e movimento à medida que o usuário rola pela página. O parallax é aplicado a elementos como imagens de fundo, criando um efeito visual atraente prendendo a atenção do usuário a página.
+
+I used the parallax effect at the beginning of the landing page. This creates a sense of depth and movement as the user scrolls through the page. Parallax is applied to elements such as background images, creating an attractive visual effect that keeps the user's attention on the page.
 </details>
 
 <details>
   <summary>Animations on page scroll</summary>
-  Adicionei animações sutis aos elementos da página à medida que o usuário rola pelo conteúdo. Essas animações ajudam a guiar a atenção do usuário e tornam a experiência mais dinâmica e envolvente.
+
+I added subtle animations to page elements as the user scrolls through the content. These animations help guide the user's attention and make the experience more dynamic and engaging.
 </details>
 
 <details>
   <summary>Images carousel</summary>
-  Implementei um carousel de imagens que exibe diferentes projetos realizados pela empresa de Engenharia Civil. Os usuários podem navegar pelas imagens usando os controles do carousel. Isso permite que a empresa mostre sua expertise e projetos de forma interativa.
+
+I implemented an image carousel that displays different projects carried out by the Civil Engineering company. Users can navigate through images using the carousel controls. This allows the company to showcase its expertise and projects in an interactive way.
 </details>
 
 <details>
   <summary>Big Numbers Effect</summary>
-  Incluí um efeito de "Big Numbers" para destacar as conquistas da empresa em grandes números. Esses números são exibidos de forma animada, chamando a atenção do usuário e transmitindo a experiência e credibilidade da empresa.
+
+I included a "Big Numbers" effect to highlight the company's achievements in large numbers. These numbers are displayed in an animated way, catching the user's attention and conveying the company's experience and credibility.
 </details>
 
 <details>
   <summary>Whatsapp and Instagram redirect</summary>
-  Adicionei botões de redirecionamento para o WhatsApp e Instagram da empresa. Ao clicar nesses botões, os usuários são direcionados para as respectivas plataformas, permitindo que eles entrem em contato facilmente ou acessem mais informações sobre a empresa.
+
+I added redirect buttons for the company's WhatsApp and Instagram. By clicking these buttons, users are redirected to the respective platforms, allowing them to easily get in touch or access more information about the company.
 </details>
 
 ## 🛠️ Tools used
