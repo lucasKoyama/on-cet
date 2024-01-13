@@ -32,12 +32,12 @@ The link below is on the website with the Next.js version; the code of this vers
 <!-- TASKS / CHALLENGES -->
 <details>
   <summary>Responsive page</summary>
-  A página foi desenvolvida de forma responsiva, adaptando-se a diferentes tamanhos de tela e dispositivos. Isso garante uma experiência consistente e agradável para os usuários, independentemente do dispositivo que estão utilizando.
+  The page was developed responsively, adapting to different screen sizes and devices. This ensures a consistent and pleasant experience for users, regardless of the device they are using.
 </details>
 
 <details>
   <summary>Show & Hide header on page scroll</summary>
-  Implementei um efeito no cabeçalho da página que faz com que ele seja escondido ao rolar para baixo e exibido novamente ao rolar para cima. Isso proporciona uma experiência mais imersiva e permite que o conteúdo da página seja visualizado sem distrações.
+  The page header is hidden when scrolling down and displayed again when scrolling up. This provides a more immersive experience and allows page content to be viewed without distractions.
 </details>
 
 <details>
