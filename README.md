@@ -1,5 +1,5 @@
 # Overview - ONCET (Web Fundamentals version)
-![Screenshot from 2023-06-06 12-38-41](https://github.com/lucasKoyama/onCET/assets/121680414/421d29c8-a136-4083-b179-0a2059d273ba)
+<img width="100%" alt="image" src="https://github.com/lucasKoyama/onCET/assets/121680414/47695292-0bdd-4261-a75f-5f9aece0df28">
 <!--
 Think of the STAR + Hero Journey description for the entire README:
 1. Situation: begin with the situation, what it aims to solve, and what the common problem is.
